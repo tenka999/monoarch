@@ -1,7 +1,6 @@
 import useEmblaCarousel from "embla-carousel-react";
 import { useCallback } from "react";
 import "@/styles/product-style.css";
-
 const products = [
   {
     name: "KTWO",
