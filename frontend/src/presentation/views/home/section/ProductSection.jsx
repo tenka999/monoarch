@@ -51,12 +51,11 @@ const products = [
   },
 ];
 
-export default function ProductSection() {
+export default function ProductSection({ setCursorOpen }) {
   const [emblaRef, emblaApi] = useEmblaCarousel({
     align: "start",
     dragFree: false,
     loop: false,
-    containScroll: "trimSnaps",
   });
   const [activeImages, setActiveImages] = useState({});
 
@@ -95,7 +94,12 @@ export default function ProductSection() {
         <div className="product-button">Shop Now</div>
       </div>
       <div className="product-bottom">
-        <div className="embla" ref={emblaRef}>
+        <div
+          className="embla"
+          ref={emblaRef}
+          onMouseEnter={() => setCursorOpen(true)}
+          onMouseLeave={() => setCursorOpen(false)}
+        >
           <div className="embla__container">
             {products.map((item, index) => (
               <div className="embla__slide" key={index}>
@@ -128,9 +132,10 @@ export default function ProductSection() {
                               [index]: colorIndex,
                             }))
                           }
+                          onMouseEnter={() => setCursorOpen(false)}
+                          onMouseLeave={() => setCursorOpen(true)}
                         ></div>
                       ))}
-                      {/* <div className="product-">{item.color}</div> */}
                     </div>
                   </div>
                 </div>

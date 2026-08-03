@@ -3,14 +3,20 @@ import { useRef, useState } from "react";
 import HeroSection from "./section/HeroSection";
 import Navbar from "./layout/Navbar";
 import ProductSection from "./section/ProductSection";
+import AboutSection from "./section/AboutSection";
+import Cursor from "./layout/Cursor";
 // import { ReactComponent as Logo } from "/layout/background/svg-path.svg";
 
 export default function HomePage() {
+  const [cursorOpen, setCursorOpen] = useState(false);
+
   return (
     <div>
+      <Cursor cursorOpen={cursorOpen} />
       <Navbar />
       <HeroSection />
-      <ProductSection />
+      <ProductSection setCursorOpen={setCursorOpen} />
+      <AboutSection />
     </div>
   );
 }

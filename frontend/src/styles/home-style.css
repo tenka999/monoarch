@@ -16,3 +16,50 @@
   box-sizing: border-box;
   font-family: "Helvetica Light";
 }
+
+.cursor {
+  position: fixed;
+  cursor: default;
+  width: 1px;
+  height: 1px;
+  background: #0000;
+
+  left: 0;
+  top: 0;
+
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+
+  pointer-events: none;
+  z-index: 999999;
+  transition:
+    width 0.2s ease,
+    height 0.2s ease;
+}
+.cursor.drag {
+  /* font-family: "Barlow Condensed", sans-serif; */
+  position: fixed;
+  font-size: 16px;
+  font-weight: 600;
+  width: 80px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #ffffff00;
+  color: #000;
+
+  left: 0;
+  top: 0;
+  padding-bottom: 2px;
+
+  border-radius: 50%;
+
+  pointer-events: none;
+  z-index: 999999;
+  transition:
+    width 0.2s ease,
+    height 0.2s ease;
+  transform: translate(-50%, -50%);
+  border: 1px solid #000;
+}
