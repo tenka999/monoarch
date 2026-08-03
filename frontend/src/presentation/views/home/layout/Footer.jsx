@@ -5,61 +5,59 @@ export default function Footer() {
     <footer className="layout-footer">
       <div className="footer-top">
         <div className="footer-top-left">
-          <div className="footer-content-left">
-            <div className="">
-              <h4>(Our office)</h4>
-              <p> California, USA </p>
-            </div>
-            <div className="">
-              <h4>(Contact Us)</h4>
-              <p> +1 234 567 890 </p>
-            </div>
-          </div>
-          <div className="footer-content-right">
-            <h4>(Navigation)</h4>
-            <a href="#">Home</a>
-            <a href="#">About</a>
-            <a href="#">Works</a>
-            <a href="#">Expertise</a>
-            <a href="#">Approach</a>
-          </div>
+          <div className="footer-logo">RADIAN</div>
+          <p>
+            DISCOVER INNOVATIVE ITEMS AND TOOLS DESIGNED TO SIMPLY YOUR DAILY
+            ROUTINE.
+          </p>
         </div>
         <div className="footer-top-right">
-          <p>
-            <svg
-              width="20"
-              height="8"
-              viewBox="0 0 80 8"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M2 4H78"
-                stroke="currentColor"
-                strokeWidth="4"
-                strokeLinecap="round"
-              />
-            </svg>{" "}
-            let's work together
-          </p>
-          <h2>hello@claritydesign.eu</h2>
-          <div className="footer-social">
-            <h4>(Social media)</h4>
-            <div className="footer-link">
-              <a href="#">Linkedin</a>
-              <a href="#">Behance</a>
-              <a href="#">Dribbble</a>
-            </div>
+          <div className="footer-nav">
+            <h3>SERVICE</h3>
+            <a href="">EMAIL MARKETING</a>
+            <a href="">CAMPAIGN</a>
+            <a href="">BRANDING</a>
+            <a href="">SOCIAL MEDIA</a>
+          </div>
+          <div className="footer-nav">
+            <h3>ABOUT</h3>
+            <a href="">OUR STORY</a>
+            <a href="">BENEFITS</a>
+            <a href="">TEAM</a>
+            <a href="">CAREERS</a>
+          </div>
+          <div className="footer-nav">
+            <h3>HELP</h3>
+            <a href="">FAQS</a>
+            <a href="">CONTACT US</a>
           </div>
         </div>
       </div>
-      <div className="footer-bottom">
-        <div className="footer-tagline">Clarity over Clutter</div>
-        <div className="footer-text">
-          <a href="#">Privacy Policy</a>
-          <p>Copyright © 2026 Clarity Design</p>
-          <a href="#">Terms & Conditions</a>
+      <div className="footer-center">
+        <div className="footer-center-top">
+          <h3>GET IN TOUCH</h3>
+          <div className="footer-input">
+            <input
+              type="text"
+              name="email"
+              placeholder="ENTER YOUR EMAIL"
+            ></input>
+            <button type="submit" className="footer-button">
+              SUBSCRIBE
+            </button>
+          </div>
         </div>
+        <div className="footer-center-bottom">
+          <div className="footer-policy">
+            <a href="">PRIVACY POLICY</a>
+            <a href="">TERM OF USE</a>
+          </div>
+          <p> &copy; 2026 COPYRIGHT BY RADIAN</p>
+        </div>
+      </div>
+      <div className="footer-bottom">
+        <div className="footer-brand">RADIAN</div>
+        <div className="footer-gradient"></div>
       </div>
     </footer>
   );
