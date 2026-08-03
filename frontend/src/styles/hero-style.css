@@ -23,6 +23,8 @@
 }
 
 .hero-content h2 {
+  font-family: "Helvetica";
+
   font-size: 36px;
   font-weight: 600;
   line-height: 1;
