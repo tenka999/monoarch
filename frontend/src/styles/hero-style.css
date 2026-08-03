@@ -48,7 +48,7 @@
   position: relative;
   overflow: hidden;
   z-index: 0;
-  transition: color 0.3s ease-in-out;
+  transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 .hero-button::before {
@@ -61,7 +61,7 @@
   height: 100%;
   z-index: -1;
   transform: translateY(-100%);
-  transition: transform 0.3s ease-in-out;
+  transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 .hero-button:hover::before {
@@ -70,4 +70,8 @@
 
 .hero-button:hover {
   color: #000;
+}
+
+.hero-button:active {
+  transform: scale(0.9);
 }
