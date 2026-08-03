@@ -27,7 +27,6 @@
   left: 0;
   top: 0;
 
-  border-radius: 50%;
   transform: translate(-50%, -50%);
 
   pointer-events: none;
@@ -41,8 +40,8 @@
   position: fixed;
   font-size: 16px;
   font-weight: 600;
-  width: 80px;
-  height: 50px;
+  width: 100px;
+  height: 30px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -52,8 +51,6 @@
   left: 0;
   top: 0;
   padding-bottom: 2px;
-
-  border-radius: 50%;
 
   pointer-events: none;
   z-index: 999999;
