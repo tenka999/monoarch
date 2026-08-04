@@ -7,6 +7,8 @@ import AboutSection from "./section/AboutSection";
 import Cursor from "./layout/Cursor";
 import GallerySection from "./section/GallerySection";
 import CtaSection from "./section/CtaSection";
+import FinaleSection from "./section/FinaleSection";
+import Footer from "./layout/Footer";
 // import { ReactComponent as Logo } from "/layout/background/svg-path.svg";
 
 export default function HomePage() {
@@ -21,6 +23,8 @@ export default function HomePage() {
       <AboutSection />
       <GallerySection />
       <CtaSection />
+      <FinaleSection />
+      <Footer />
     </div>
   );
 }
